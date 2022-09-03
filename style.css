@@ -130,7 +130,7 @@ header img{
         font-size: 2.15rem;
         line-height: 2.6rem;
         width: 90%;
-        margin-top: 2rem;
+        margin-top: 1rem;
         margin-left: 0.8rem;
     
     }
@@ -213,7 +213,7 @@ header img{
         width: 60%;
         height: 2.6rem;
         background-color: rgb(37 99 235);
-        margin-top: 2rem;
+        margin-top: 1rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
