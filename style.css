@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: Rubik;
+    src: url(./Rubik/Rubik-VariableFont_wght.ttf);
+}
 html{
     overflow-x: hidden;
 }
@@ -10,6 +14,7 @@ body{
     background-color: rgb(13 13 43);
     font-family: Oxanium,sans-serif;
     color: white;
+    /* font-family: Rubik; */
 }
 nav{
     display: flex;
@@ -41,7 +46,7 @@ nav ul li a{
     height: 2.3rem;
     font-size: 1.1rem;
     color: white;
-    background-color: rgba(59,130,246,.5);
+    background-color: rgb(61, 121, 249);
     border-radius: 40px;
     border: none;
 }
@@ -93,7 +98,7 @@ header img{
     border: none;
 }
 .try-it-free{
-    width: 50%;
+    width: 40%;
     height: 2.6rem;
     background-color: rgb(37 99 235);
     margin-top: 2rem;
@@ -105,17 +110,232 @@ header img{
 .try-it-free p:nth-child(1){
     margin-left: 1rem;
 }
-.try-it-free .bi-arrow-right{
+.try-it-free .bi-caret-right-fill{
     background-color: white;
     color: rgb(37 99 235);
     padding: 0.5rem;
     margin-right: 0.6rem;
     border-radius: 40px;
 }
+.three-icons-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 7rem;
+}
+.three-icons-container .icon1, .icon2, .icon3{
+    display: flex;
+    gap: 1rem;
+}
+.three-icons-container .icon1 h4, .icon2 h4, .icon3 h4{
+    font-weight: 600;
+    font-size: 1.5rem;
+ 
+}
+.three-icons-container .icon1 p, .icon2 p, .icon3 p{
+    font-size: 0.8rem;
+    color: rgb(189, 189, 189);
+}
+.three-icons-container svg{
+    background-color: rgb(75 85 99);
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 40px;
+   
+}
+.why{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    top: 7rem;
+}
+.why img{
+    width: 37%;
+    margin-left: 6rem;
+}
+.why-text h2{
+    font-size: 3rem;
+    width: 80%;
+    font-weight: 500;
+}
+.why-text p{
+    width: 80%;
+    line-height: 1.3;
+    color: rgb(189, 189, 189);
+    margin-top: 1rem;
+}
+.why button{
+    width: 8rem;
+    height: 2.3rem;
+    background-color: rgb(61, 121, 249);
+    color: white;
+    border: none;
+    margin-top: 1rem;
+    font-size: 1rem;
+    border-radius: 40px;
+}
+.earn{
+    margin-top: 10rem;
+}
+.earn h3{
+    text-align: center;
+    font-size: 1.8rem;
+    position: relative;
+    top: 8rem;
+}
+.earn .firstp{
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 0.7rem;
+    color: rgb(189, 189, 189);
+    position: relative;
+    top: 9rem;
+}
+.earn-parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.earn-flex{
+    width: 70%;
+    height: 20rem;
+    background-color: white;
+    margin-top: 2rem;
+    border-radius: 20px;
+    z-index: 1;
+    /* display: flex; */
+    position: relative;
+    top: 9rem;
+    /* justify-content: space-evenly; */
+    
+}
+.input-flex{
+    display: flex;
+    justify-content: space-around;
+}
+.input-flex p{
+    color: rgb(189, 189, 189);
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
 
+.earn-flex button{
+    height: 3rem;
+    width: 8rem;
+    background-color: rgb(61, 121, 249);
+    margin-top: 2rem;
+}
 
+.hour{
+   color: rgb(61, 121, 249);
+   margin-top: 3rem;
+   margin-left: 2rem;
 
+}
+.amount{
+    color: black;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    font-size: 2rem;
+}
+.revenue{
+    color: rgb(189, 189, 189);
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+}
+.ontop{
+    background-color: rgb(228, 228, 235);
+    height: 15rem;
+}
+
+.coins{
+    background-color:rgb(228, 228, 235);
+}
+.coins h3{
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.coins-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+}
+.coins-container img{
+    margin-top: 2rem;
+}
+.coins-container h3{
+    margin-top: 3rem;
+}
+.ethereum, .litecoin, .bitcoin{
+    width: 22%;
+    height: 25rem;
+    background-color: white;
+    margin-bottom: 3rem;
+    border-radius: 20px;
+
+}
+
+.coin-text{
+    color: black;
+    font-family: rubik;
+}
+.coin .bi-arrow-right{
+    color: black;
+}
+.section-features{
+    font-family: rubik;
+}
+.section-features h3{
+    margin-top: 3.5rem;
+    font-family: rubik;
+    width: 40%;
+    text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+    font-size: 1.9rem;
+    margin-bottom: 3rem;
+    font-weight: 500;
+}
+.feature-1{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 6rem;
+}
+.feature-1 h4{
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+.feature-1 p{
+    width: 35rem;
+    font-weight: 400;
+    color: rgb(189, 189, 189);
+}
+.feature-1 button{
+    width: 8rem;
+    height: 2rem;
+    background-color: rgb(61, 121, 249);
+    border: none;
+    border-radius: 40px;
+    color: white;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+}
 @media screen and (max-width:600px){
+    html, body{
+        overflow-x: hidden;
+        width: 100%;
+    }
     .header-container{
         flex-direction: column;
         justify-content: center;
@@ -229,4 +449,223 @@ header img{
         margin-right: 0.6rem;
         border-radius: 40px;
     }
+    .three-icons-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 3rem;
+    }
+    .icon1, .icon2, .icon3{
+        margin-top: 2rem;
+    }
+    .three-icons-container .icon1 p, .icon2 p, .icon3 p{
+        font-size: 0.8rem;
+        color: rgb(189, 189, 189);
+        margin-top: 0.2rem;
+    }
+    
+.why{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+.why img{
+    width: 80%;
+    margin-left: 0rem;
+}
+.why-text h2{
+    font-size: 2rem;
+    width: 80%;
+    font-weight: 500;
+    margin-left: 1rem;
+    margin-top: 3rem;
+}
+.why-text p{
+    width: 90%;
+    font-size: 1rem;
+    line-height: 1.3;
+    color: rgb(189, 189, 189);
+    margin-top: 0.6rem;
+    margin-left: 1rem;
+}
+.why button{
+    width: 8rem;
+    height: 2.3rem;
+    background-color: rgb(61, 121, 249);
+    color: white;
+    border: none;
+    margin-top: 1rem;
+    font-size: 1rem;
+    border-radius: 40px;
+    margin-left: 1rem;
+}
+.earn{
+    margin-top: 10rem;
+}
+.earn h3{
+    text-align: center;
+    font-size: 1.8rem;
+    position: relative;
+    top: 8rem;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+
+}
+.earn p{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width: 90%;
+}
+.input-flex p{
+    font-size: 1rem;
+    margin-top: 4rem;
+    position: relative;
+ 
+}
+.earn-parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.earn-flex{
+    width: 80%;
+    height: inherit;
+    background-color: white;
+    margin-top: 2rem;
+    border-radius: 20px;
+    z-index: 1;
+    flex-direction: column;
+    position: relative;
+    top: 10rem;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+    
+}
+
+.earn-flex button{
+    height: 3rem;
+    width: 8rem;
+    background-color: rgb(61, 121, 249);
+}
+.ontop{
+    background-color: rgb(228, 228, 235);
+    height: 10rem;
+}
+.input-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 2rem;
+}
+
+.hour{
+    color: rgb(61, 121, 249);
+    margin-top: 3rem;
+    margin-left: 1rem;
+ 
+ }
+ .amount{
+     color: black;
+     margin-top: 2rem;
+     margin-left: 1rem;
+     font-size: 1.3rem;
+     font-weight: 700;
+ }
+ .revenue{
+     color: rgb(189, 189, 189);
+     font-size: 0.9rem;
+     margin-top: 1.1rem;
+     margin-left: 1rem;
+     width: 90%;
+     margin-bottom: 1rem;
+ }
+ .coins h3{
+    text-align: center;
+    color: black;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.coins-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    
+}
+.coins-container img{
+    margin-top: 2rem;
+}
+.ethereum, .litecoin, .bitcoin{
+    width: 80%;
+    height: 20rem;
+    background-color: white;
+    margin-bottom: 2rem;
+
+}
+.section-features{
+    font-family: rubik;
+}
+.section-features img{
+    width: 80%;
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+}
+.section-features h3{
+    margin-top: 3.5rem;
+    font-family: rubik;
+    width: 90%;
+    text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    font-weight: 500;
+}
+.feature-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 6rem;
+}
+.feature-1 h4{
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    margin-left: 1rem;
+}
+.feature-1 p{
+    width: 93%;
+    font-weight: 400;
+    color: rgb(189, 189, 189);
+    margin-left: 1rem;
+}
+.feature-1 button{
+    width: 8rem;
+    height: 2rem;
+    background-color: rgb(61, 121, 249);
+    border: none;
+    border-radius: 40px;
+    color: white;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+
 }
