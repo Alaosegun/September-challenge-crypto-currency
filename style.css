@@ -178,6 +178,23 @@ header img{
 .earn{
     margin-top: 10rem;
 }
+.earn #hash-rate-input, #options-input{
+    border: none;
+    background-color: transparent;
+    border-bottom: 1.5px solid rgb(189, 189, 189);
+    width: 20rem;
+    outline: 0px;
+    font-size: 1.3rem;
+    margin-top: 1.8rem;
+}
+#hash-rate-input::-webkit-input-placeholder, #options-input::-webkit-input-placeholder{
+    font-family: rubik;
+    color: black;
+    font-size: 1.5rem;
+
+    
+
+}
 .earn h3{
     text-align: center;
     font-size: 1.8rem;
@@ -222,10 +239,14 @@ header img{
 }
 
 .earn-flex button{
-    height: 3rem;
-    width: 8rem;
+    height: 3.5rem;
+    width: 8.5rem;
     background-color: rgb(61, 121, 249);
     margin-top: 2rem;
+    border: none;
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 40px;
 }
 
 .hour{
@@ -304,24 +325,29 @@ header img{
     margin-bottom: 3rem;
     font-weight: 500;
 }
-.feature-1{
+.feature-container img{
+    width: 40%;
+}
+.feature-1, .feature-2, .feature-3{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 6rem;
+    gap: 3rem;
+    margin-top: 3rem;
 }
-.feature-1 h4{
-    font-size: 1.6rem;
-    margin-top: 2rem;
+.feature-1 h4, .feature-2 h4, .feature-3 h4{
+    font-size: 1.8rem;
+    margin-top: 3rem;
     margin-bottom: 1rem;
     font-weight: 500;
 }
-.feature-1 p{
+
+.feature-1 p, .feature-2 p, .feature-3 p{
     width: 35rem;
     font-weight: 400;
     color: rgb(189, 189, 189);
 }
-.feature-1 button{
+.feature-1 button, .feature-2 button, .feature-3 button{
     width: 8rem;
     height: 2rem;
     background-color: rgb(61, 121, 249);
@@ -331,11 +357,14 @@ header img{
     font-size: 1.1rem;
     margin-top: 2rem;
 }
+
 @media screen and (max-width:600px){
-    html, body{
+    html{
         overflow-x: hidden;
         width: 100%;
+        height: 100%;
     }
+    body{}
     .header-container{
         flex-direction: column;
         justify-content: center;
@@ -521,10 +550,44 @@ header img{
     display: block;
     width: 90%;
 }
+.earn{
+    margin-top: 10rem;
+}
+.earn #hash-rate-input, #options-input{
+    border: none;
+    background-color: transparent;
+    border-bottom: 1.5px solid rgb(189, 189, 189);
+    width: 90%;
+    outline: none;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+#hash-rate-input::-webkit-input-placeholder, #options-input::-webkit-input-placeholder{
+    font-family: rubik;
+    color: black;
+    font-size: 0.9rem;
+
+    
+
+}
+.earn-flex button{
+    height: 3rem;
+    width: 7rem;
+    background-color:rgb(13, 79, 220);
+    margin-top: 2rem;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.earn-flex button:hover{
+    background-color:rgb(52, 101, 207);
+}
+
 .input-flex p{
     font-size: 1rem;
-    margin-top: 4rem;
-    position: relative;
+    margin-top: 3.5rem;
  
 }
 .earn-parent{
@@ -618,10 +681,15 @@ header img{
     font-family: rubik;
 }
 .section-features img{
-    width: 80%;
+    width: 85%;
    margin-left: auto;
    margin-right: auto;
    display: block;
+   position: relative;
+  
+}
+.feature-3 img, .feature-1 img{
+    bottom: 3rem;
 }
 .section-features h3{
     margin-top: 3.5rem;
@@ -635,13 +703,16 @@ header img{
     margin-bottom: 3rem;
     font-weight: 500;
 }
-.feature-1{
+.feature-1, .feature-3{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 6rem;
 }
+ .feature-2{
+    flex-direction: column-reverse;
+ }
 .feature-1 h4{
     font-size: 1.6rem;
     margin-top: 1rem;
@@ -649,13 +720,20 @@ header img{
     font-weight: 500;
     margin-left: 1rem;
 }
-.feature-1 p{
+.feature-3 h4, .feature-2 h4{
+    font-size: 1.6rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    margin-left: 1rem;
+}
+.feature-1 p, .feature-2 p, .feature-3 p{
     width: 93%;
     font-weight: 400;
     color: rgb(189, 189, 189);
     margin-left: 1rem;
 }
-.feature-1 button{
+.feature-1 button, .feature-2 button, .feature-3 button{
     width: 8rem;
     height: 2rem;
     background-color: rgb(61, 121, 249);
@@ -663,7 +741,7 @@ header img{
     border-radius: 40px;
     color: white;
     font-size: 1.1rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-left: 1rem;
 }
 
