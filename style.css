@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: 0;
 }
 @font-face {
     font-family: Rubik;
@@ -10,53 +11,37 @@
 html{
     overflow-x: hidden;
     scroll-behavior: smooth;
-    z-index: -1;
-    position: relative
 }
 body{
 
     font-family: rubik;
     color: white;
-    z-index: -1;
-    position: relative;
 }
 .dark-background{
     background: #0D0D2B;
 }
-.menu-icon, #check{
-   display: none;
 
+nav .logo{
+    width: inherit;
 }
+
 nav{
     display: flex;
-    justify-content: space-evenly;
-    height: 60px;
-}
-nav label{
-    width: 10%;
-    margin-top: 1.5rem;
-    position: relative;
-    left: 0rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
 }
 nav ul{
-
+    
 }
-nav ul li{
-    display: inline-block;
-    margin-top: 1.5rem;
-  
-}
-.nav-mobile-flex{
+nav ul li {
+    padding: 1rem;
     display: inline;
 }
-nav ul li a{
-    text-decoration: none;
-    color: white;
-    padding: 2.5rem;
-    
-   
+.nav-mobile-flex{
+    display: none;
 }
-.nav-register-btn{
+ .nav-register-btn-desktop{
     width: 6.5rem;
     height: 2.3rem;
     font-size: 1.1rem;
@@ -66,6 +51,10 @@ nav ul li a{
     border: none;
 }
 
+.menu-icon, #check{
+    display: none;
+ 
+ }
 .header-container{
     display: flex;
     align-items: center;
@@ -570,7 +559,7 @@ footer ul li a{
     nav{
         justify-content: space-between;
         /* display: flex; */
-        flex-direction: row-reverse;
+        flex-direction: row;
     }
     .nav-mobile-flex{
         display: flex;
@@ -586,24 +575,26 @@ footer ul li a{
         bottom: 2rem;
     }
     .menu-icon{
-        width: 2rem;
+        width: 1.4rem;
+        margin-top: 1rem;
         display: block;
        cursor: pointer;
        position: relative;
        z-index: 1;
+       margin-right: 2rem;
        
         
     }
-    nav label{
-    width: 90rem;
-    height: 90rem;
+    nav label img{
+        width: 100%;
     margin-top: 1.5rem;
     margin-left: 0.4rem ;
     position: relative;
     left: 1rem;
+    height: 1rem;
     }
   
-    nav ul{
+     nav ul{
         position: fixed;
         width: 100%;
         height: 100%;
@@ -620,12 +611,16 @@ footer ul li a{
         flex-direction: column;
     
     }
+    .nav-register-btn-desktop{
+        display: none;
+    }
     nav ul li{
         display: block;
         line-height: 3rem;
         text-transform: uppercase;
         position: relative;
         bottom: 6rem;
+        padding: 0.8;
         
     }
      nav ul li a{
