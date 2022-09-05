@@ -15,14 +15,23 @@
 <body>
     <header>
         <nav data-aos="fade-down">
-            <label for="logo"><img src="https://cypto-currency.vercel.app/static/media/logo.e44a93b92960b7a7a870e08a3080d60e.svg" alt=""></label>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+            </label>
+            <label for="logo"><img src="./IMages/logo.e44a93b92960b7a7a870e08a3080d60e.svg" alt=""></label>
             <ul>
                 <li><a href="">Products</a></li>
                 <li><a href="">Features</a></li>
                 <li><a href="">About</a></li>
                 <li><a href="">Contact</a></li>
-                <li><a href="">Login</a></li>
-                <button class="nav-register-btn">Register</button>
+                <div class="nav-mobile-flex"> 
+                    <li><a href="">Login</a></li> <div class="login-vertical-line"></div>
+                    <button class="nav-register-btn">Register</button>
+                </div>
+              
             </ul>
         </nav>
         <div class="header-container">
@@ -31,7 +40,7 @@
                 <button data-aos="fade-left" >70% SAVE</button>
                <p data-aos="fade-right"> for the best black friday deals</p>
             </div>
-            <h1 data-aos="fade-up">fastest &amp; secure platform to invest in cypto</h1>
+            <h1 data-aos="fade-up">fastest &amp; secure platform to invest in crypto</h1>
             <p data-aos="fade-up">buy and sell cyptocurrencies by trusted 10M wallets, in over 100m transactions</p>
             <div class="try-it-free" data-aos="zoom-in">
                 <p data-aos="fade-left">Try For FREE</p>
@@ -116,7 +125,6 @@
         <img src="./IMages/bitcoin.png" alt="">
         <h3>Bitcoin</h3>
         <p class="coin-text">Digital currency in which a record of transactions is maintained.</p>
-        <p><img src="./IMages/271228.png" alt="" width="28"></p>
     </div>
     <div data-aos="zoom-in" class="ethereum">
         <img src="./IMages/eth.png" alt="">
@@ -168,8 +176,54 @@
     </div>
 </section>
 
-<section class="start-mining"></section>
-<!-- <input type="text" class="text-base" placeholder="enter message"> -->
+<section class="start-mining">
+    <div class="mining-container">
+        <div class="mining-child">
+            <div class="mining-text-main">
+                <h3>Start Mining Now!</h3>
+                <div class="mining-text-flex">
+                <div><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, ipsum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, saepe.</p></div>
+                <input type="text" id="mining-input" placeholder="enter message">
+                <button>Subscribe</button> </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+</section>
+<footer>
+    <div class="footer-container">
+        <div><label for=""><img src="" alt=""></label></div>
+        <div class="quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</li></a>
+                <li><a href="">About</li></a>
+                <li><a href="">Features</li></a>
+                <li><a href="">Products</li></a>
+                <li><a href="">Contact</li></a>
+            </ul>
+
+        </div>
+
+        <div class="resource-links">
+            <h3>Resource Links</h3>
+            <ul>
+               <li> <a href="">Download Whitepapper</li></a>
+               <li> <a href="">Smart Token</li></a>
+               <li> <a href="">Blockchain Explore</li></a>
+                <li> <a href="">Crypto API</li></a>
+                <li> <a href="">Interest</li></a>
+            </ul>
+
+        </div>
+
+        <div class="payment">
+            <h3>We accept the following systems</h3>
+
+        </div>
+
+    </div>
+</footer>
  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
