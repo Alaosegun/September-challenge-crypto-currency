@@ -531,7 +531,7 @@ footer .icons{
     margin-right: auto;
     margin-top: 1rem;
 }
-@media (orientation: landscape){
+@media only screen and (max-height: 575.98px) and (orientation: landscape) {
     .footer-hl{
         border-bottom: 0.1px solid rgb(189, 189, 189);
         width: 50%;
@@ -560,7 +560,9 @@ footer .icons{
         line-height: 2.6rem;
         width: 50%;
         margin-top: 1rem;
-        margin-left: 0.8rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
     
     }
     header .slant{
@@ -592,14 +594,20 @@ footer .icons{
         height: 1.9rem;
         background-color: rgb(75 85 99);
         border-radius: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
      
     }
     .try-it-free{
-        width: 50%;
+        width: 30%;
         height: 2.2rem;
         background-color: rgb(37 99 235);
         margin-top: 1.7rem;
         margin-left: 0.8rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
     }
     .header-text p:nth-child(3){
         font-size: 0.75rem;
@@ -607,6 +615,9 @@ footer .icons{
         margin-left: 1rem;
         width: 80%;
         line-height: 1.5;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
     
     }
     nav{
@@ -779,23 +790,29 @@ footer .icons{
     justify-content: center;
 }
 .why img{
-    width: 80%;
+    width: 50%;
     margin-left: 0rem;
 }
 .why-text h2{
     font-size: 2rem;
-    width: 80%;
+    width: 50%;
     font-weight: 500;
     margin-left: 1rem;
     margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 .why-text p{
-    width: 90%;
+    width: 60%;
     font-size: 1rem;
     line-height: 1.3;
     color: rgb(189, 189, 189);
     margin-top: 0.6rem;
     margin-left: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 .why button{
     width: 8rem;
@@ -806,7 +823,10 @@ footer .icons{
     margin-top: 1rem;
     font-size: 1rem;
     border-radius: 40px;
-    margin-left: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
 }
 .earn{
     margin-top: 10rem;
@@ -823,7 +843,11 @@ footer .icons{
 
 }
 .earn p{
-    width: 100%;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+
 }
 .earn{
     margin-top: 10rem;
@@ -873,7 +897,7 @@ footer .icons{
   
 }
 .earn-flex{
-    width: 80%;
+    width: 60%;
     height: inherit;
     background-color: white;
     margin-top: 2rem;
@@ -900,7 +924,7 @@ footer .icons{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-left: 2rem;
+    margin-left: 0rem;
 }
 
 .hour{
@@ -948,7 +972,7 @@ footer .icons{
     width: 21%;
 }
 .ethereum, .litecoin, .bitcoin{
-    width: 80%;
+    width: 40%;
     height: 20rem;
     margin-bottom: 2rem;
 
@@ -959,9 +983,10 @@ footer .icons{
 .section-features{
     font-family: rubik;
     padding: 0.7rem;
+    text-align: center;
 }
 .section-features img{
-    width: 85%;
+    width: 55%;
    margin-left: auto;
    margin-right: auto;
    display: block;
@@ -974,7 +999,7 @@ footer .icons{
 .section-features h3{
     margin-top: 3.5rem;
     font-family: rubik;
-    width: 90%;
+    width: 50%;
     text-align: center;
    margin-left: auto;
    margin-right: auto;
@@ -1008,10 +1033,12 @@ footer .icons{
     margin-left: 1rem;
 }
 .feature-1 p, .feature-2 p, .feature-3 p{
-    width: 93%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     font-weight: 400;
     color: rgb(189, 189, 189);
-    margin-left: 1rem;
 }
 .feature-1 button, .feature-2 button, .feature-3 button{
     width: 8rem;
@@ -1029,7 +1056,7 @@ footer .icons{
         display: none;
     }
     .mining-child{
-        width: 85%;
+        width: 60%;
         height: inherit;
         background-color: #3671E9;
         border-radius: 10px;
