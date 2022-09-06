@@ -23,6 +23,8 @@ body{
 
 nav .logo{
     width: inherit;
+    margin-top: 1rem;
+    margin-left: 3.5rem;
 }
 
 nav{
@@ -30,13 +32,19 @@ nav{
     width: 100%;
     align-items: center;
     justify-content: space-around;
+
 }
 nav ul{
-    
+    margin-top: 1rem;
 }
 nav ul li {
-    padding: 1rem;
+    padding: 1.5rem;
     display: inline;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: rubik;
+    color: white;
 }
 .nav-mobile-flex{
     display: none;
@@ -244,11 +252,13 @@ header img{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
   
 }
 .earn-flex{
-    width: 70%;
-    height: 20rem;
+    width: fit-content;
+    height: fit-content;
     background-color: white;
     margin-top: 2rem;
     border-radius: 20px;
@@ -261,6 +271,10 @@ header img{
 }
 .input-flex{
     display: flex;
+    width: fit-content;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    gap: 4rem;
     justify-content: space-around;
 }
 .input-flex p{
@@ -297,6 +311,7 @@ header img{
     font-size: 0.9rem;
     margin-top: 1.5rem;
     margin-left: 2rem;
+    margin-bottom: 2rem;
 }
 .ontop{
     background-color: rgb(228, 228, 235);
@@ -418,7 +433,7 @@ header img{
 }
 .mining-child{
     width: 75%;
-    height: 13rem;
+    height: fit-content;
     background-color: #3671E9;
     border-radius: 10px;
     margin-bottom: 3rem;
@@ -432,12 +447,13 @@ header img{
     font-weight: 550;
 }
 .mining-text-flex p{
-    width: 26rem;
+    width: fit-content;
     font-size: 0.8rem;
 }
 .mining-text-flex{
     margin-top: 2rem;
     display: flex;
+    gap: 2rem;
     justify-content: space-around;
     align-items: center;
 }
@@ -456,12 +472,12 @@ header img{
     font-size: 1.2rem;
 }
 .mining-text-flex button{
-    width: 8rem;
-    height: 3rem;
+    width: 9rem;
+    height: 2.9rem;
     border: none;
     background-color: #fff;
-    font-size: 1.2rem;
-    border-radius: 20px;
+    font-size: medium;
+    border-radius: 15px;
 }
 footer{
      background: #0D0D2B;
@@ -477,13 +493,20 @@ footer{
     line-height: 3;
 }
 .footer-container h3{
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    color: rgb(210, 210, 210);
 }
 footer ul li a{
     color: white;
     text-decoration: none;
 }
-@media screen and (max-width:600px){
+footer ul li a:hover{
+    color: rgb(189, 189, 189);
+}
+footer .payment img{
+    padding: 0.5rem;
+}
+@media  screen  and (max-width:600px){
     html{
         overflow-x: hidden;
         width: 100%;
@@ -524,7 +547,6 @@ footer ul li a{
     height: 20.8675rem;
     left: 0rem;
     top: 30.97rem;
-
     background:linear-gradient(180.09deg, rgba(255, 255, 255, 0) 0.49%, rgba(255, 255, 255, 0.04) 39.06%, rgba(255, 255, 255, 0) 99.92%);
     transform: rotate(-120deg);
     }
@@ -563,16 +585,33 @@ footer ul li a{
     }
     .nav-mobile-flex{
         display: flex;
+
      
     }
-    .nav-register-btn{
-       position: relative;
-       bottom: 4.3rem;
+    .nav-register-btn-mobile{
+        width: 6rem;
+        height: 2.3rem;
+        /* font-size: 1.1rem; */
+        color: white;
+        background-color: rgb(59, 130, 246);
+        border-radius: 40px;
+        border: none;
+        margin-left: 4rem;
+        cursor: pointer;
+    }
+    nav .login-desktop{
+        display: none;
+    }
+    nav .login-mobile{
+        position: relative;
+        left: 2rem;
     }
     .login-vertical-line{
-        border-left: 2px solid gold;
+        border-left: 2px solid rgb(189, 189, 189);
         position: relative;
-        bottom: 2rem;
+        bottom: 5.5rem;
+        left: 3.1rem;
+        height: 2.2rem;
     }
     .menu-icon{
         width: 1.4rem;
@@ -584,6 +623,11 @@ footer ul li a{
        margin-right: 2rem;
        
         
+    }
+    nav .logo{
+        width: inherit;
+        margin-top: 1rem;
+        margin-left: 0rem;
     }
     nav label img{
         width: 100%;
@@ -599,7 +643,7 @@ footer ul li a{
         width: 100%;
         height: 100%;
         background-color: #0D0D2B;
-        top: 4rem;
+        top: 2rem;
         left: 100%;
         text-align: center;
         transition: ease-in .5s;
@@ -620,13 +664,14 @@ footer ul li a{
         text-transform: uppercase;
         position: relative;
         bottom: 6rem;
-        padding: 0.8;
+        padding: 0;
         
     }
      nav ul li a{
          font-size: 1rem;
          color: white;
          font-weight: 535;
+         font-family: rubik;
      }
      a:hover,a.active{
          background: none;
@@ -759,7 +804,7 @@ footer ul li a{
     border: none;
     background-color: transparent;
     border-bottom: 1.5px solid rgb(189, 189, 189);
-    width: 90%;
+    width: 95%;
     outline: none;
     font-size: 1rem;
     margin-top: 1rem;
@@ -1019,7 +1064,7 @@ footer ul li a{
         line-height: 3;
     }
     .footer-container h3{
-        margin-bottom: 0.6rem;
+        margin-bottom: 0.4rem;
         margin-top: 2rem;
     }
     main{
