@@ -291,9 +291,6 @@ header img{
     border-bottom: 1px solid rgb(189, 189, 189);
     margin-top: 1.6rem;
 }
-#earn-icon{
-    width: ;
-}
 
 .earn-flex button{
     height: 3.5rem;
@@ -383,13 +380,13 @@ header img{
     height: 4.375rem;
     width: 4.375rem;
     /* margin: 0 2px; */
-    border: 2px solid #1f0254;
+    border: 2px solid gray;
     border-radius: 50px;
     cursor: pointer;
     overflow: hidden;
     transition: all 0.3s ease-out;
     margin-top: 2.5rem;
-    color: #1f0254;
+    color: rgb(59, 130, 246);
    }
    .button .icon{
     display: inline-block;
@@ -418,8 +415,8 @@ header img{
  .button:hover{
         width: 200px;
         transition: .5s ease-in;
-        background-color: #1f0254;
-        color: white;
+        /* background-color: #1f0254; */
+        /* color: ; */
         
  } 
 .ethereum .button{
@@ -430,6 +427,7 @@ header img{
     border: 2px solid white;
     border-radius: 50px;
     cursor: pointer;
+    color: white;
     overflow: hidden;
     transition: all 0.3s ease-out;
     margin-top: 2.5rem;
@@ -454,7 +452,6 @@ header img{
    margin-bottom: 2rem;
     margin-left: 0px;
     /* text-align: center; */
-    color: white;
     line-height: 55px;
    }
 .ethereum .button:hover{
@@ -1072,7 +1069,7 @@ footer .icons{
     height: 4.375rem;
     width: 4.375rem;
     /* margin: 0 2px; */
-    border: 2px solid #1f0254;
+    border: 2px solid gray;
     border-radius: 50px;
     cursor: default;
     overflow: hidden;
@@ -1081,7 +1078,7 @@ footer .icons{
     margin-bottom: 1rem;
 
    }
- .ethereum .button{
+   .ethereum .button{
     display: inline-block;
     height: 4.375rem;
     width: 4.375rem;
@@ -1089,10 +1086,10 @@ footer .icons{
     border: 2px solid white;
     border-radius: 50px;
     cursor: default;
+    color: white;
     overflow: hidden;
     transition: all 0.3s ease-out;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-top: 2.5rem;
    }
 .bitcoin{
     overflow-x: hidden;
@@ -1101,8 +1098,14 @@ footer .icons{
     width: 200px;
     transition: .5s ease-in;
     background-color: transparent;
-    color: #1f0254;
+    color: rgb(52, 101, 207);
 }
+.ethereum .button:hover{
+    width: 200px;
+    transition: .5s ease-in;
+    color: white;
+    
+} 
 .section-features{
     font-family: rubik;
     padding: 0.7rem;
