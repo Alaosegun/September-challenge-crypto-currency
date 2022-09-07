@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     outline: 0;
+    user-select: none;
 }
 @font-face {
     font-family: Rubik;
@@ -275,18 +276,30 @@ header img{
     margin-left: 2rem;
     gap: 4rem;
     justify-content: space-around;
+    align-items: center;
 }
 .input-flex p{
-    color: rgb(189, 189, 189);
+    color: rgba(189, 189, 189, 0.321);
     font-size: 1.5rem;
     margin-top: 2rem;
+}
+.earn select{
+    width: 24rem;
+    font-size: 1.5rem;
+    border: none;
+    background-color: rgba(69, 69, 69, 0.075);
+    border-bottom: 1px solid rgb(189, 189, 189);
+    margin-top: 1.6rem;
+}
+#earn-icon{
+    width: ;
 }
 
 .earn-flex button{
     height: 3.5rem;
     width: 8.5rem;
     background-color: rgb(61, 121, 249);
-    margin-top: 2rem;
+    margin-top: 3rem;
     border: none;
     color: white;
     font-size: 1.3rem;
@@ -320,7 +333,7 @@ header img{
 .coins{
     background-color:rgb(228, 228, 235);
 }
-.coins h3{
+.coins .coins-head-text{
     text-align: center;
     color: black;
     font-size: 2rem;
@@ -345,18 +358,117 @@ header img{
     background-color: white;
     margin-bottom: 3rem;
     border-radius: 20px;
+    color: black;
 
 }
-.litecoin, .ethereum{
-    background-color: transparent;
+.ethereum{
+    width: 22%;
+    height: 25rem;
+    background-color: #1f0254;
+    margin-bottom: 3rem;
+    border-radius: 20px;
+    color: white;
+    
+}
+.litecoin {
+    background-color: white;
     width: 22%;
     height: 25rem;
     margin-bottom: 3rem;
     border-radius: 20px;
-}
-
-.coin-text{
     color: black;
+}
+ .button{
+    display: inline-block;
+    height: 4.375rem;
+    width: 4.375rem;
+    /* margin: 0 2px; */
+    border: 2px solid #1f0254;
+    border-radius: 50px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    margin-top: 2.5rem;
+    color: #1f0254;
+   }
+   .button .icon{
+    display: inline-block;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 40%;
+    box-sizing: border-box;
+    line-height: 45px;
+   }
+   .button .icon svg{
+    position: relative;
+    top: 1rem;
+   
+   }  
+   
+   .button span{
+    font-size: 20px;
+    font-weight: 500;
+   margin-bottom: 2rem;
+    margin-left: 0px;
+    /* text-align: center; */
+    
+    line-height: 55px;
+   }
+ .button:hover{
+        width: 200px;
+        transition: .5s ease-in;
+        background-color: #1f0254;
+        color: white;
+        
+ } 
+.ethereum .button{
+    display: inline-block;
+    height: 4.375rem;
+    width: 4.375rem;
+    /* margin: 0 2px; */
+    border: 2px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    margin-top: 2.5rem;
+   }
+.ethereum   .button .icon{
+    display: inline-block;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 40%;
+    box-sizing: border-box;
+    line-height: 45px;
+   }
+.ethereum   .button .icon img{
+    position: relative;
+    bottom: 0.1rem;
+    width: 1rem;
+   }  
+.ethereum  .button span{
+    font-size: 1.25rem;
+    font-weight: 500;
+   margin-bottom: 2rem;
+    margin-left: 0px;
+    /* text-align: center; */
+    color: white;
+    line-height: 55px;
+   }
+.ethereum .button:hover{
+        width: 200px;
+        transition: .5s ease-in;
+        
+ } 
+  
+
+
+.ethereum p, .litecoin p, .bitcoin p{
+    margin-top: 2rem;
+}
+.coin-text{
     font-family: rubik;
 }
 .coin .bi-arrow-right{
@@ -530,627 +642,21 @@ footer .icons{
     margin-right: auto;
     margin-top: 1rem;
 }
-@media only screen and (max-height: 575.98px) and (orientation: landscape) {
-    .footer-hl{
-        border-bottom: 0.1px solid rgb(189, 189, 189);
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 1rem;
-    }
-    html{
-        overflow-x: hidden;
-        width: 100%;
-        height: 100%;
-    }
-    .header-container{
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
-    }
-    .header-text{
-        margin-left: 0.5rem;
-    }
-    
-    h1{
-        text-transform: capitalize;
-        font-weight: 600;
-        font-size: 2.15rem;
-        line-height: 2.6rem;
-        width: 50%;
-        margin-top: 1rem;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    
-    }
-    header .slant{
-    position: absolute;
-    width: 7.5rem;
-    height: 29.6412rem;
-    left: 0rem;
-    top: 12.6163rem;
-    background: linear-gradient(180.09deg, rgba(255, 255, 255, 0) 0.49%, rgba(255, 255, 255, 0.04) 39.06%, rgba(255, 255, 255, 0) 99.92%);
-    transform: rotate(-120deg);
-    }
-    .slant2{
-        position: absolute;
-    width: 6.25rem;
-    height: 20.8675rem;
-    left: 0rem;
-    top: 30.97rem;
-    background:linear-gradient(180.09deg, rgba(255, 255, 255, 0) 0.49%, rgba(255, 255, 255, 0.04) 39.06%, rgba(255, 255, 255, 0) 99.92%);
-    transform: rotate(-120deg);
-    }
-    .header-container img{
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-    }
-    .percentage-off{
-        width: 90%;
-        height: 1.9rem;
-        background-color: rgb(75 85 99);
-        border-radius: 40px;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-     
-    }
-    .try-it-free{
-        width: 30%;
-        height: 2.2rem;
-        background-color: rgb(37 99 235);
-        margin-top: 1.7rem;
-        margin-left: 0.8rem;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-    .header-text p:nth-child(3){
-        font-size: 0.75rem;
-        color: rgb(189, 189, 189);
-        margin-left: 1rem;
-        width: 80%;
-        line-height: 1.5;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    
-    }
-    nav{
-        justify-content: space-between;
-        /* display: flex; */
-        flex-direction: row;
-    }
-    .nav-mobile-flex{
-        display: flex;
 
-     
-    }
-    .nav-register-btn-mobile{
-        width: 6rem;
-        height: 2.3rem;
-        /* font-size: 1.1rem; */
-        color: white;
-        background-color: rgb(59, 130, 246);
-        border-radius: 40px;
-        border: none;
-        margin-left: 4rem;
-        cursor: pointer;
-    }
-    nav .login-desktop{
-        display: none;
-    }
-    nav .login-mobile{
-        position: relative;
-        left: 2rem;
-    }
-    .login-vertical-line{
-        border-left: 2px solid rgb(189, 189, 189);
-        position: relative;
-        bottom: 5.5rem;
-        left: 3.1rem;
-        height: 2.2rem;
-    }
-    .menu-icon{
-        width: 1.4rem;
-        margin-top: 1rem;
-        display: block;
-       cursor: pointer;
-       position: relative;
-       z-index: 1;
-       margin-right: 2rem;
-       
-        
-    }
-    nav .logo{
-        width: inherit;
-        margin-top: 1rem;
-        margin-left: 0rem;
-    }
-    nav label img{
-        width: 100%;
-    margin-top: 1.5rem;
-    margin-left: 0.4rem ;
-    position: relative;
-    left: 1rem;
-    height: 1rem;
-    }
-  
-     nav ul{
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        background-color: #0D0D2B;
-        top: 2rem;
-        left: 100%;
-        text-align: center;
-        transition: ease-in .5s;
-        z-index: 1;
-        /* position: relative; */
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-    
-    }
-    .nav-register-btn-desktop{
-        display: none;
-    }
-    nav ul li{
-        display: block;
-        line-height: 3rem;
-        text-transform: uppercase;
-        position: relative;
-        bottom: 6rem;
-        padding: 0;
-        
-    }
-     nav ul li a{
-         font-size: 1rem;
-         color: white;
-         font-weight: 535;
-         font-family: rubik;
-     }
-     a:hover,a.active{
-         background: none;
-         color: gray;
-     }
-     #check:checked~ ul {
-         left: 0;
-     } 
-    .percentage-off{
-        width: 80%;
-        /* margin-top: 0rem; */
-        justify-content: space-between;
-        display: flex;
-        align-items: center;
-        height: 2.6rem;
-        background-color: rgb(75 85 99);
-        border-radius: 40px;
-    }
-    .percentage-off p{
-        margin-right: 0.6rem;
-        font-size: 0.57rem;
-        font-weight: 600;
-        
-    }
-    .percentage-off button{
-        width: 6rem;
-        height: 1.7rem;
-        font-size: 0.7rem;
-        margin-left: 0.5rem;
-        color: rgb(66, 74, 85);
-        border-radius: 40px;
-        border: none;
-    }
-    .try-it-free{
-        width: 60%;
-        height: 2.6rem;
-        background-color: rgb(37 99 235);
-        margin-top: 1rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-radius: 40px;
-    }
-    .try-it-free p:nth-child(1){
-        margin-left: 0.6rem;
-    }
-    .try-it-free .bi-arrow-right{
-        background-color: white;
-        color: rgb(37 99 235);
-        padding: 0.5rem;
-        margin-right: 0.6rem;
-        border-radius: 40px;
-    }
-    .three-icons-container{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        margin-top: 3rem;
-    }
-    .icon1, .icon2, .icon3{
-        margin-top: 2rem;
-    }
-    .three-icons-container .icon1 p, .icon2 p, .icon3 p{
-        font-size: 0.8rem;
-        color: rgb(189, 189, 189);
-        margin-top: 0.2rem;
-    }
-    
-.why{
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-}
-.why img{
-    width: 50%;
-    margin-left: 0rem;
-}
-.why-text h2{
-    font-size: 2rem;
-    width: 50%;
-    font-weight: 500;
-    margin-left: 1rem;
-    margin-top: 3rem;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-.why-text p{
-    width: 60%;
-    font-size: 1rem;
-    line-height: 1.3;
-    color: rgb(189, 189, 189);
-    margin-top: 0.6rem;
-    margin-left: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-.why button{
-    width: 8rem;
-    height: 2.3rem;
-    background-color: rgb(61, 121, 249);
-    color: white;
-    border: none;
-    margin-top: 1rem;
-    font-size: 1rem;
-    border-radius: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    display: block;
-}
-.earn{
-    margin-top: 10rem;
-}
-.earn h3{
-    text-align: center;
-    font-size: 1.8rem;
-    position: relative;
-    top: 8rem;
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
-
-}
-.earn p{
-    width: 50%;
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
-
-}
-.earn{
-    margin-top: 10rem;
-}
-.earn #hash-rate-input, #options-input{
-    border: none;
-    background-color: transparent;
-    border-bottom: 1.5px solid rgb(189, 189, 189);
-    width: 100%;
-    outline: none;
-    font-size: 1rem;
-    margin-top: 1rem;
-}
-
-#hash-rate-input::-webkit-input-placeholder, #options-input::-webkit-input-placeholder{
-    font-family: rubik;
-    color: black;
-    font-size: 0.9rem;
-
-    
-
-}
-.earn-flex button{
-    height: 3rem;
-    width: 7rem;
-    background-color:rgb(13, 79, 220);
-    margin-top: 1.8rem;
-    border: none;
-    color: white;
-    font-size: 1.2rem;
-    border-radius: 40px;
-    cursor: pointer;
-}
-.earn-flex button:hover{
-    background-color:rgb(52, 101, 207);
-}
-
-.input-flex p{
-    font-size: 1rem;
-    margin-top: 3.5rem;
- 
-}
-.earn-parent{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-}
-.earn-flex{
-    width: 60%;
-    height: inherit;
-    background-color: white;
-    margin-top: 2rem;
-    border-radius: 20px;
-    z-index: 1;
-    flex-direction: column;
-    position: relative;
-    top: 10rem;
-    justify-content: space-evenly;
-    margin-bottom: 3rem;
-    
-}
-
-.earn-flex button{
-    height: 3rem;
-    width: 8rem;
-    background-color: rgb(61, 121, 249);
-}
-.ontop{
-    background-color: rgb(228, 228, 235);
-    height: 10rem;
-}
-.input-flex{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-left: 0rem;
-}
-
-.hour{
-    color: rgb(61, 121, 249);
-    margin-top: 3rem;
-    margin-left: 1rem;
- 
- }
- .amount{
-     color: black;
-     margin-top: 2rem;
-     margin-left: 1rem;
-     font-size: 1.3rem;
-     font-weight: 700;
- }
- .revenue{
-     color: rgb(189, 189, 189);
-     font-size: 0.9rem;
-     margin-top: 1.1rem;
-     margin-left: 1rem;
-     width: 90%;
-     margin-bottom: 1rem;
- }
- .coins h3{
-    text-align: center;
-    color: black;
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-.coins-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    text-align: center;
-    
-}
-.coins-container img{
-    margin-top: 2rem;
-    width: 21%;
-}
-.ethereum, .litecoin, .bitcoin{
-    width: 40%;
-    height: 20rem;
-    margin-bottom: 2rem;
-
-}
-.bitcoin{
-    overflow-x: hidden;
-}
-.section-features{
-    font-family: rubik;
-    padding: 0.7rem;
-    text-align: center;
-}
-.section-features img{
-    width: 55%;
-   margin-left: auto;
-   margin-right: auto;
-   display: block;
-   position: relative;
-  
-}
-.feature-3 img, .feature-1 img{
-    bottom: 3rem;
-}
-.section-features h3{
-    margin-top: 3.5rem;
-    font-family: rubik;
-    width: 50%;
-    text-align: center;
-   margin-left: auto;
-   margin-right: auto;
-   display: block;
-    font-size: 1.5rem;
-    margin-bottom: 3rem;
-    font-weight: 500;
-}
-.feature-1, .feature-3{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 3rem;
-}
- .feature-2{
-    flex-direction: column-reverse;
- }
-.feature-1 h4{
-    font-size: 1.6rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-weight: 500;
-    margin-left: 1rem;
-}
-.feature-3 h4, .feature-2 h4{
-    font-size: 1.6rem;
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-    font-weight: 500;
-    margin-left: 1rem;
-}
-.feature-1 p, .feature-2 p, .feature-3 p{
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    font-weight: 400;
-    color: rgb(189, 189, 189);
-}
-.feature-1 button, .feature-2 button, .feature-3 button{
-    width: 8rem;
-    height: 2rem;
-    background-color: rgb(61, 121, 249);
-    border: none;
-    border-radius: 40px;
-    color: white;
-    font-size: 1.1rem;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    margin-left: 1rem;
-}
-.triangle{
-        display: none;
-    }
-    .mining-child{
-        width: 60%;
-        height: inherit;
-        background-color: #3671E9;
-        border-radius: 10px;
-    }
-    .mining-text-main{
-        padding: 1.5rem;
-    }
-    .mining-text-main h3{
-        font-size: 1.4rem;
-        margin-left: 0rem;
-    }
-    .mining-text-flex p{
-        width: 95%;
-        font-size: 0.7rem;
-        line-height: 1.5;
-    }
-    .mining-text-flex{
-        margin-top: 1rem;
-        display: flex;
-        justify-content: space-around;
-        align-items: left;
-        flex-direction: column;
-    }
-    #mining-input{
-        border: none;
-        background: none;
-        border-bottom: 1px solid white;
-        width: 95%;
-        outline: 0;
-        color: white;
-        font-size: 1.2rem;
-        margin-top: 1rem;
-    }
-    #mining-input::-webkit-input-placeholder{
-        color: white;
-        font-family: rubik;
-        font-size: 1.1rem;
-    }
-    .mining-text-flex button{
-        width: 6rem;
-        height: 2.4rem;
-        border: none;
-        background-color: #fff;
-        font-size: 1rem;
-        border-radius: 10px;
-        margin-top: 2rem;
-        cursor: pointer;
-    }
-    .mining-text-flex button:hover{
-        background-color: gainsboro;
-    }
-    .footer-container{
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-        text-align: center;
-    
-    }
-    .footer-container ul{
-        list-style: none;
-        line-height: 3;
-    }
-    .footer-container h3{
-        margin-bottom: 0.4rem;
-        margin-top: 2rem;
-    }
-    main{
-        overflow-x: hidden;
-    }
-    .social-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 1rem;
-    }
-    footer .icons{
-        font-size: 1.7rem;
-        margin-top: 0.7rem;
-        letter-spacing: 0.4rem;
-        margin-bottom: 1rem;
-        margin-right: 0;
-        
-    }
-    footer p:first-of-type{
-        margin-left: 0;
-        margin-bottom: 0;
-     }
-}
 @media  screen and (max-width:600px){
     html{
         overflow-x: hidden;
         width: 100%;
         height: 100%;
     }
-    body{}
+    .earn select{
+        width: 100%;
+        font-size: 1rem;
+        border: none;
+        border-bottom: 1px solid rgb(189, 189, 189);
+        margin-top: 1.6rem;
+    }
+    
     .header-container{
         flex-direction: column;
         justify-content: center;
@@ -1263,25 +769,20 @@ footer .icons{
         
     }
     nav .logo{
-        width: inherit;
+        width: 80%;
         margin-top: 1rem;
-        margin-left: 0rem;
+        margin-top: 1.5rem;
+        margin-left: 0.7rem ;
+        
     }
-    nav label img{
-        width: 100%;
-    margin-top: 1.5rem;
-    margin-left: 0.4rem ;
-    position: relative;
-    left: 1rem;
-    height: 1rem;
-    }
+    
   
      nav ul{
         position: fixed;
         width: 100%;
         height: 100%;
         background-color: #0D0D2B;
-        top: 2rem;
+        top: 3rem;
         left: 100%;
         text-align: center;
         transition: ease-in .5s;
@@ -1442,7 +943,7 @@ footer .icons{
     width: 100%;
     outline: none;
     font-size: 1rem;
-    margin-top: 1rem;
+    margin-top: 0rem;
 }
 
 #hash-rate-input::-webkit-input-placeholder, #options-input::-webkit-input-placeholder{
@@ -1457,7 +958,7 @@ footer .icons{
     height: 3rem;
     width: 7rem;
     background-color:rgb(13, 79, 220);
-    margin-top: 1.8rem;
+    margin-top: 0rem;
     border: none;
     color: white;
     font-size: 1.2rem;
@@ -1470,7 +971,7 @@ footer .icons{
 
 .input-flex p{
     font-size: 1rem;
-    margin-top: 3.5rem;
+    margin-top: 2.5rem;
  
 }
 .earn-parent{
@@ -1486,6 +987,7 @@ footer .icons{
     margin-top: 2rem;
     border-radius: 20px;
     z-index: 1;
+    /* width: fit-content; */
     flex-direction: column;
     position: relative;
     top: 10rem;
@@ -1524,11 +1026,12 @@ footer .icons{
      font-weight: 700;
  }
  .revenue{
-     color: rgb(189, 189, 189);
-     font-size: 0.9rem;
+     font-size: 0.8rem;
      margin-top: 1.1rem;
      margin-left: 1rem;
-     width: 90%;
+     margin-right: 8rem;
+     width: 80%;
+     font-weight: 500;
      margin-bottom: 1rem;
  }
  .coins h3{
@@ -1556,12 +1059,49 @@ footer .icons{
 }
 .ethereum, .litecoin, .bitcoin{
     width: 80%;
-    height: 20rem;
+    height: fit-content;
     margin-bottom: 2rem;
 
 }
+.ethereum h3{
+    color: white;
+    
+}
+.button{
+    display: inline-block;
+    height: 4.375rem;
+    width: 4.375rem;
+    /* margin: 0 2px; */
+    border: 2px solid #1f0254;
+    border-radius: 50px;
+    cursor: default;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+
+   }
+ .ethereum .button{
+    display: inline-block;
+    height: 4.375rem;
+    width: 4.375rem;
+    /* margin: 0 2px; */
+    border: 2px solid white;
+    border-radius: 50px;
+    cursor: default;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+   }
 .bitcoin{
     overflow-x: hidden;
+}
+.button:hover{
+    width: 200px;
+    transition: .5s ease-in;
+    background-color: transparent;
+    color: #1f0254;
 }
 .section-features{
     font-family: rubik;
@@ -1725,15 +1265,24 @@ footer .icons{
         margin-bottom: 0;
      }
     
+    
 }
 
 @media screen and (min-width:601px) and (max-width:1204px){
-        html{
+        html, body{
             overflow-x: hidden;
             width: 100%;
             height: 100%;
             font-size: 1.5rem;
         }
+        .earn select{
+            width: 100%;
+            font-size: 1.3rem;
+            border: none;
+            border-bottom: 1px solid rgb(189, 189, 189);
+            margin-top: 1.6rem;
+        }
+        
         .header-container{
             flex-direction: column;
         }
@@ -1745,7 +1294,7 @@ footer .icons{
             text-transform: capitalize;
             font-weight: 600;
             font-size: 3rem;
-            line-height: 2.6rem;
+            line-height: 2.8rem;
             width: 80%;
             margin-top: 1rem;
             margin-left: 0.8rem;
@@ -1844,17 +1393,11 @@ footer .icons{
             
         }
         nav .logo{
-            width: inherit;
+            width: 80%;
             margin-top: 1rem;
-            margin-left: 0rem;
-        }
-        nav label img{
-            width: 100%;
-        margin-top: 1.5rem;
-        margin-left: 0.4rem ;
-        position: relative;
-        left: 1rem;
-        height: 1rem;
+            margin-top: 1.5rem;
+            margin-left: 0.7rem ;
+            
         }
       
          nav ul{
@@ -1946,8 +1489,8 @@ footer .icons{
         }
         .three-icons-container{
             display: flex;
-            flex-direction: column;
-            width: fit-content;
+            flex-direction:row;
+            width: 100%;
             justify-content: space-around;
             align-items: center;
             margin-top: 3rem;
@@ -2139,10 +1682,66 @@ footer .icons{
     }
     .ethereum, .litecoin, .bitcoin{
         width: 80%;
-        height: 20rem;
+        height: fit-content;
         margin-bottom: 2rem;
     
     }
+    .ethereum h3{
+        color: white;
+        
+    }
+    .button{
+        display: inline-block;
+        height: 4.375rem;
+        width: 4.375rem;
+        /* margin: 0 2px; */
+        border: 2px solid #1f0254;
+        border-radius: 50px;
+        cursor: default;
+        overflow: hidden;
+        transition: all 0.3s ease-out;
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+       
+    
+       }
+     .ethereum .button{
+        display: inline-block;
+        height: 4.375rem;
+        width: 4.375rem;
+        /* margin: 0 2px; */
+        border: 2px solid white;
+        border-radius: 50px;
+        cursor: default;
+        overflow: hidden;
+        transition: all 0.3s ease-out;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+       }
+       .ethereum  .button span{
+        font-size: 1.25rem;
+        font-weight: 500;
+       margin-bottom: 2rem;
+        margin-left: 0px;
+        /* text-align: center; */
+        color: white;
+        line-height: 55px;
+       }
+       .button span{
+        font-size: 1.25rem;
+        font-weight: 500;
+       margin-bottom: 2rem;
+        margin-left: 0px;
+        /* text-align: center; */
+        /* color: white; */
+        line-height: 55px;
+       }
+       .button:hover{
+        width: 40%;
+       }
+       .ethereum span:hover{
+        width: 40%;
+       }
     .bitcoin{
         overflow-x: hidden;
     }

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     
     <title>September Challenge | Alao Segun</title>
+    
 </head>
 <body>
     <main>
@@ -109,7 +110,16 @@
         <div class="earn-parent" data-aos="zoom-in"> 
             <div class="earn-flex">
                 <div class="input-flex"> <p class="input1"><input id="hash-rate-input" type="text" placeholder="Enter Hash Rate"></p>
-                    <p><input id="options-input" type="text" placeholder="TH/s"></p>
+                    <p class="select-container">
+                        <select name="" id="select-container">
+                        <option value="options">TH/s</option>
+                        <option value="options">H/s</option>
+                        <option value="options">GH/s</option>
+                        <option value="options">MH/s</option>
+                        <option value="options">KH/s</option>
+                      
+                    </select></p>
+
                     <div class="earn-input-bottom-border"></div>
                     <button>Calculate</button>
                 </div>
@@ -127,23 +137,47 @@
 </section>
 
 <div class="coins">
-    <h3 data-aos="fade-up">Trade Securely And Market The High Growth Cryptocurrencies.</h3>
+    <h3 data-aos="fade-up" class="coins-head-text">Trade Securely And Market The High Growth Cryptocurrencies.</h3>
   
-<div class="coins-container">
-    <div data-aos="zoom-in-left" class="bitcoin">
+<div  class="coins-container">
+    <div tabindex="1" data-aos="zoom-in-left" id="bitcoin" class="bitcoin">
         <img src="./IMages/bitcoin.png" alt="">
-        <h3>Bitcoin</h3>
+        <h3 >Bitcoin</h3>
         <p class="coin-text">Digital currency in which a record of transactions is maintained.</p>
+        <div class="coins-button">
+
+            <div tabindex="1" class="button" >
+                <div class="icon">
+                    <svg id="earn-icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="text-2xl"  xmlns="http://www.w3.org/2000/svg"><path d="M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z"></path></svg>
+                </div>
+                <span>Start Mining!</span>
+            </div> 
+              
+        </div>
+      
     </div>
-    <div data-aos="zoom-in" class="ethereum">
+    <div tabindex="1" data-aos="zoom-in" class="ethereum">
         <img src="./IMages/eth.png" alt="">
         <h3>Ethereum</h3>
         <p class="coin-text">Blockchain technology to create and run decentralized digital applications.</p>
+        <div tabindex="1" class="button" >
+            <div class="icon">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="text-2xl" xmlns="http://www.w3.org/2000/svg"><path d="M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z"></path></svg>
+            </div>
+            <span>Start Mining!</span>
+        </div> 
     </div>
-    <div data-aos="zoom-in-right" class="litecoin">
+
+    <div tabindex="1" data-aos="zoom-in-right" class="litecoin">
         <img src="./IMages/download.png" alt="">
         <h3>Litecoin</h3>
         <p class="coin-text">Cryptocurrency that enables instant payments to anyone in the world.</p>
+        <div tabindex="1" class="button" >
+            <div class="icon">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="text-2xl"  xmlns="http://www.w3.org/2000/svg"><path d="M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z"></path></svg>
+            </div>
+            <span>Start Mining!</span>
+        </div> 
     </div>
 </div>
 </div>
@@ -186,8 +220,8 @@
 </section>
 
 <section  class="start-mining">
-    <div data-aos="zoom-in" class="mining-container">
-        <div class="mining-child">
+    <div  class="mining-container">
+        <div data-aos="zoom-in" class="mining-child">
             <div class="mining-text-main">
                 <h3>Start Mining Now!</h3>
                 <div class="mining-text-flex">
@@ -211,7 +245,6 @@
                 <li><a href="">Products</li></a>
                 <li><a href="">Contact</li></a>
             </ul>
-
         </div>
 
         <div class="resource-links">
@@ -248,10 +281,12 @@
     </div>
 </footer>
 </main>
+
+
  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
-        duration: 2000
+        duration: 1700
       });
     </script>
 </body>
