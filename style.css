@@ -656,24 +656,7 @@ footer .icons{
         margin-left: 0.8rem;
     
     }
-    header .slant{
-    position: absolute;
-    width: 7.5rem;
-    height: 29.6412rem;
-    left: 0rem;
-    top: 12.6163rem;
-    background: linear-gradient(180.09deg, rgba(255, 255, 255, 0) 0.49%, rgba(255, 255, 255, 0.04) 39.06%, rgba(255, 255, 255, 0) 99.92%);
-    transform: rotate(-120deg);
-    }
-    .slant2{
-        position: absolute;
-    width: 6.25rem;
-    height: 20.8675rem;
-    left: 0rem;
-    top: 30.97rem;
-    background:linear-gradient(180.09deg, rgba(255, 255, 255, 0) 0.49%, rgba(255, 255, 255, 0.04) 39.06%, rgba(255, 255, 255, 0) 99.92%);
-    transform: rotate(-120deg);
-    }
+    
     .header-container img{
         width: 80%;
         margin-left: auto;
@@ -738,7 +721,7 @@ footer .icons{
         height: 2.2rem;
     }
     .menu-icon{
-        width: 1.4rem;
+        width: 1.6rem;
         margin-top: 1rem;
         display: block;
        cursor: pointer;
