@@ -1026,6 +1026,10 @@ footer .icons{
     margin-bottom: 2rem;
 
 }
+.coin-text{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
 .ethereum h3{
     color: white;
     
@@ -1138,7 +1142,7 @@ footer .icons{
     color: white;
     font-size: 1.1rem;
     margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     margin-left: 1rem;
 }
 .triangle{
