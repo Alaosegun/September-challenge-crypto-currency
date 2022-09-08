@@ -721,7 +721,7 @@ footer .icons{
         height: 2.2rem;
     }
     .menu-icon{
-        width: 1.6rem;
+        width: 1.8rem;
         margin-top: 1rem;
         display: block;
        cursor: pointer;
@@ -963,6 +963,7 @@ footer .icons{
     height: 3rem;
     width: 8rem;
     background-color: rgb(61, 121, 249);
+    margin-top: 2rem;
 }
 .ontop{
     background-color: rgb(228, 228, 235);
