@@ -757,6 +757,7 @@ footer .icons{
         z-index: 3;
         }
         .menu-btn__burger{
+            margin-top: 0.8rem;
             width: 24px;
             height: 3px;
             background: white;
@@ -780,7 +781,7 @@ footer .icons{
         .menu-btn__burger::after{
             transform: translateY(8px);
         }
-        .menu-btn.open .menu-btn__burger{
+         .menu-btn.open .menu-btn__burger{
             transform: translateX(-50px);
             background: transparent;
             box-shadow: none;
@@ -803,9 +804,8 @@ footer .icons{
         
     }
     nav .logo{
-        width: 80%;
+        width: 85%;
         margin-top: 1rem;
-        margin-top: 1.5rem;
         margin-left: 0.7rem ;
         
     }
